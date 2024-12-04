@@ -2,6 +2,7 @@
 
 ```{r}
 library(tidyverse)
+
 ```
 
 
@@ -11,4 +12,9 @@ library(tidyverse)
 
 ```{r}
 # Code team member 2
+
+starwars %>% filter(species == 'Human') %>% 
+    ggplot(aes(x=height, y=mass)) + 
+    geom_point()
 ```
+
